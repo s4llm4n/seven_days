@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CardList extends StatelessWidget {
+class CartList extends StatelessWidget {
   String imageUrl;
   String iconOne;
   String amount;
@@ -10,14 +10,14 @@ class CardList extends StatelessWidget {
   String place;
   String pricing;
 
-  CardList({
-    this.imageUrl, 
-    this.iconOne, 
-    this.iconTwo, 
-    this.amount,
-    this.food,
-    this.place,
-    this.pricing
+  CartList({
+    required this.imageUrl, 
+    required this.iconOne, 
+    required this.iconTwo, 
+    required this.amount,
+    required this.food,
+    required this.place,
+    required this.pricing
     });
   @override
   Widget build(BuildContext context) {
@@ -35,20 +35,27 @@ class CardList extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/burger.png',
+                          'imageUrl',
                           width: 80,
                         ),
                         Row(
                           children: [
                             Image.asset(
-                              'assets/min_icon.png',
+                              'iconOne',
                               width: 22,
                             ),
                             SizedBox(width: 10),
-                            Text('2'),
+                            Text(
+                              amount,
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                              ),
+                              ),
                             SizedBox(width: 10,),
                             Image.asset(
-                              'assets/plus_icon.png',
+                              iconTwo,
                               width: 22,
                             ),
                           ],
@@ -62,7 +69,7 @@ class CardList extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Burger Malleta',
+                          food,
                           style: GoogleFonts.poppins(
                             color: Color(0xff191919),
                             fontSize: 18,
@@ -70,7 +77,7 @@ class CardList extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'McTheone',
+                          place,
                           style: GoogleFonts.poppins(
                             color: Color(0xffA3ABBB),
                             fontWeight: FontWeight.w300,
@@ -82,7 +89,7 @@ class CardList extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 102.0, right: 10),
                     child: Text(
-                      '\$90.000',
+                      pricing,
                       style: GoogleFonts.poppins(
                         color: Color(0xff191919),
                         fontWeight: FontWeight.w300,
