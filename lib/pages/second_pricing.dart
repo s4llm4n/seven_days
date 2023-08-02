@@ -11,7 +11,7 @@ class SecondPricing extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                  'assets/linear_background.png',
+                  'assets/linear2.png',
                 ),
               ),
             ),
@@ -51,6 +51,7 @@ class SecondPricing extends StatelessWidget {
                         children: [
                           Image.asset(
                             'assets/orange_check.png',
+                            width: 26,
                           ),
                           SizedBox(width: 12,),
                           Text(
@@ -67,6 +68,7 @@ class SecondPricing extends StatelessWidget {
                         children: [
                           Image.asset(
                             'assets/orange_check.png',
+                            width: 26,
                           ),
                           SizedBox(width: 12,),
                           Text(
@@ -83,6 +85,7 @@ class SecondPricing extends StatelessWidget {
                         children: [
                           Image.asset(
                             'assets/orange_check.png',
+                            width: 26,
                           ),
                           SizedBox(width: 12,),
                           Text(
@@ -99,6 +102,7 @@ class SecondPricing extends StatelessWidget {
                         children: [
                           Image.asset(
                             'assets/orange_check.png',
+                            width: 26,
                           ),
                           SizedBox(width: 12,),
                           Text(
@@ -110,7 +114,7 @@ class SecondPricing extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 58,),
+                      SizedBox(height: 100,),
                       Container(
                         width: 319,
                         height: 55,
@@ -137,7 +141,9 @@ class SecondPricing extends StatelessWidget {
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
-                                Image.asset('assets/arrow_right2.png',),
+                                Image.asset(
+                                  'assets/arrow_right2.png',
+                                ),
                               ],
                             ),
                           ),

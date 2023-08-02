@@ -35,13 +35,14 @@ class CartList extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          'imageUrl',
+                          imageUrl,
                           width: 80,
                         ),
+                        SizedBox(height: 13,),
                         Row(
                           children: [
                             Image.asset(
-                              'iconOne',
+                              iconOne,
                               width: 22,
                             ),
                             SizedBox(width: 10),
@@ -49,7 +50,7 @@ class CartList extends StatelessWidget {
                               amount,
                               style: GoogleFonts.poppins(
                                 color: Color(0xff191919),
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w500,
                               ),
                               ),
@@ -87,12 +88,12 @@ class CartList extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 102.0, right: 10),
+                    padding: const EdgeInsets.only(top: 102.0, right: 2),
                     child: Text(
                       pricing,
                       style: GoogleFonts.poppins(
                         color: Color(0xff191919),
-                        fontWeight: FontWeight.w300,
+                        fontWeight: FontWeight.w500,
                         fontSize: 16,
                       ),
                     ),

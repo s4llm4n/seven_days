@@ -7,6 +7,8 @@ import 'package:seven_days/pages/first_signin.dart';
 import 'package:seven_days/pages/first_splash.dart';
 import 'package:seven_days/pages/first_started.dart';
 import 'package:seven_days/pages/second_empty.dart';
+import 'package:seven_days/pages/second_pricing.dart';
+import 'package:seven_days/pages/second_random.dart';
 import 'package:seven_days/pages/second_rating.dart';
 import 'package:seven_days/pages/second_signin.dart';
 import 'package:seven_days/pages/second_splash.dart';
@@ -19,7 +21,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstRandom(),
+      home: SecondRandom(),
     );
   }
 }

@@ -25,8 +25,8 @@ class FirstRandom extends StatelessWidget {
              CartList(
               imageUrl: 'assets/burger.png', 
               iconOne: 'assets/min_icon.png', 
-              iconTwo: '2', 
-              amount: 'assets/plus_icon.png', 
+              iconTwo: 'assets/plus_icon.png', 
+              amount: '2', 
               food: 'Burger Malletta', 
               place: 'McTheone', 
               pricing: '\$90.000',
@@ -35,8 +35,8 @@ class FirstRandom extends StatelessWidget {
             CartList(
               imageUrl: 'assets/flower.png', 
               iconOne: 'assets/min_icon.png', 
-              iconTwo: '5', 
-              amount: 'assets/plus_icon.png', 
+              iconTwo: 'assets/plus_icon.png', 
+              amount: '5', 
               food: 'Mojito Orange', 
               place: 'The Bar', 
               pricing: '\$510.000',
@@ -92,45 +92,46 @@ class FirstRandom extends StatelessWidget {
                                 fontSize: 16,
                             ),
                             ),
-                          Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              '\$600.00',
-                              style: GoogleFonts.poppins(
-                                color: Color(0xff191919),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                            ),
-                            ),
-                            SizedBox(height: 10,),
-                            Text(
-                              '\$80.00',
-                              style: GoogleFonts.poppins(
-                                color: Color(0xff191919),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                            ),
-                            ),
-                            SizedBox(height: 10,),
-                            Text(
-                              '\$680.00',
-                              style: GoogleFonts.poppins(
-                                color: Color(0xff191919),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                            ),
-                            ),
                           ],
+                        ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '\$600.00',
+                                style: GoogleFonts.poppins(
+                                  color: Color(0xff191919),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                              ),
+                              ),
+                              SizedBox(height: 10,),
+                              Text(
+                                '\$80.00',
+                                style: GoogleFonts.poppins(
+                                  color: Color(0xff191919),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                
+                              ),
+                              ),
+                              SizedBox(height: 10,),
+                              Text(
+                                '\$680.00',
+                                style: GoogleFonts.poppins(
+                                  color: Color(0xff191919),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                              ),
+                              ),
+                            ],
                         ),
                       ],
                     ),
                   ],
                 ),
-                  ],
-                          ),
               ),
-            ),
+              ),
             SizedBox(height: 60,),
             Container(
               width: 327,
@@ -178,8 +179,8 @@ class FirstRandom extends StatelessWidget {
               ),
             ),
           ],
-        ),
       ),
-    );
+      ),
+      );
   }
 }
